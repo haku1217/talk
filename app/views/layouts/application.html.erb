@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Talk</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width">  <!-- head内にこのタグ設定を追記する -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <%= yield %>
+    <footer>
+      <p>© 2018-2019 Copyright Harukitakahashi</p>
+    </footer>
+    </div>
+  </body>
+</html>
